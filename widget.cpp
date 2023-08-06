@@ -28,12 +28,12 @@ void Widget::changeEnabled()
     if (150 <= money)
         ui->pbTea->setEnabled(true);
     else
-        ui->pbCoffee->setEnabled(false);
+        ui->pbTea->setEnabled(false);
 
     if (200 <= money)
         ui->pbMilk->setEnabled(true);
     else
-        ui->pbCoffee->setEnabled(false);
+        ui->pbMilk->setEnabled(false);
 }
 
 void Widget::changeMoney(int diff)
@@ -103,7 +103,7 @@ void Widget::on_pbReset_clicked()
     n10 = money/10;
     money -= 10 * n10;
 
-    text = QString("500 : %1 100 : %2 50 : %3 10 : %4").arg(n500).arg(n100).arg(n50).arg(n10);
+    text = QString("500 : %1\n 100 : %2\n 50 : %3\n 10 : %4").arg(n500).arg(n100).arg(n50).arg(n10);
 
     mb.information(nullptr, "Title", text);
 
