@@ -105,7 +105,7 @@ void Widget::on_pbReset_clicked()
 
     text = QString("500 : %1\n 100 : %2\n 50 : %3\n 10 : %4").arg(n500).arg(n100).arg(n50).arg(n10);
 
-    mb.information(nullptr, "Title", text);
+    mb.information(nullptr, "Money Reset", text);
 
     changeMoney(-money);
 }
